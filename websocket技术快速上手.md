@@ -2,13 +2,15 @@ websocket技术快速上手
 
 这是一个简单的Java WebSocket服务器端示例：
 
+
+```
 import java.io.IOException;
 import javax.websocket.OnClose;
 import javax.websocket.OnMessage;
 import javax.websocket.OnOpen;
 import javax.websocket.Session;
 import javax.websocket.server.ServerEndpoint;
-```
+
 @ServerEndpoint("/echo")
 public class EchoServer {
     @OnOpen
